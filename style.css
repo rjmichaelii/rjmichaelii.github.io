@@ -1,5 +1,26 @@
 html {
     background-color : #212121;
+    padding : 25px;
+}
+
+div {
+    text-align: center;
+
+}
+
+#navBar {
+    font-size : 48px;
+    padding : 5px
+}
+
+a[href='#history-section'] {
+    padding-right: 50px;
+}
+a[href='#education-section'] {
+    padding-right: 50px;
+}
+a[href='#goals-section'] {
+    padding-right: 50px;
 }
 
 a:link {
@@ -20,4 +41,13 @@ h1 {
 
 p {
     color : #FF9200;
+}
+
+hr.rounded {
+    border-top: 8px solid white;
+    border-radius: 5px;
+}
+
+#footer-section {
+    font-size: 48px;
 }
