@@ -4,36 +4,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Unit 1 Graphic - AWCC</title>
+    <link rel="icon" type="image/x-icon" href="AWCC Icon.png">
+
 </head>
 <body>
-    <a href="#history-section">History</a>
-    <a href="#education-section">Education</a>
-    <a href="#goals-section">Goals</a>
-    <h1>
-        Hello world!
-    </h1>
-        <p>This is the start of my Unit 1 Graphic</p>
-    <h1 id="history-section">History</h1>
-        <p>
-        Big Game Alaska was founded in 1993 by Mike Miller with a few plains, bison, and Rocky Mountain elk. In the last 30
-        years, Alaska Wildlife Conservation Center has transformed into a 501(c) 3 nonprofit status in 2000. In 2007 the name
-        Big Game Alaska was changed from the one known today as AWCC. Located at Mile 79 of the Seward Highway, this 200-acre
-        sanctuary is the number one visitor attraction in Southcentral Alaska and is home to various animals. This sanctuary
-        includes lynx, bears, porcupines, wood bison, foxes, wolves, moose, elk, and more! In a joint effort since 2003, the
-        AWCC and the Alaska Department of Fish and Game have been participating in a program to reintroduce native wood bison
-        back into Alaska after 100 years of absence.
-        </p>
-    <h1 id="education-section">Education</h1>
-        <p>
-        Educating is an essential part of the Alaska Wildlife Conservation Center’s mission. They are constantly working to
-        provide opportunities for school groups and guests
-        throughout the year. They help hundreds of visitors daily through field trips, presentations, lessons, internships
-        tours, programs, art contests, and virtually. They recently received a $250,000 grant from Matson to help with an Ocean
-        Education Center. With this, in the Fall of 2023, they plan to build the Maston Education Center where AWCC meets the
-        waters of Turnagain Arm. Here Cook Inlet beluga whales can be seen as well as icebergs, bore tides, and glaciers
-        allowing AWCC to explain their education programs further.
-        </p>
-    <h1 id="goals-section">Goals</h1>
+
+    <!-- NAV BAR -->
+    <div id="navBar">
+        <a href="#history-section">History</a>
+        <a href="#education-section">Education</a>
+        <a href="#goals-section">Goals</a>
+    </div>
+
+    <hr class="rounded">
+
+    <!-- RANDOM -->
+    <div id="random">
+        <h1>
+            Hello world!
+        </h1>
+            <p id="demo"></p>
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Feb 13, 2023 23:59:00").getTime();
+
+                // Update the count down every 1 second
+                var x = setInterval(function () {
+
+                    // Get today's date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now and the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Output the result in an element with id="demo"
+                    document.getElementById("demo").innerHTML = "This is the start of my Unit 1 Graphic and the assignment is due in, " + days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
+
+                    // If the count down is over, write some text 
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "Deadline Passed";
+                    }
+                }, 1000);
+            </script>
+    </div>
+
+    <hr class="rounded">
+
+    <!-- CHARITY -->
+    <div id="charity">
+        <h1>Alaska Wildlife Conservation Center</h1>
+    </div>
+
+    <hr class="rounded">
+
+    <!-- HISTORY -->
+    <div>
+        <h1 id="history-section">History</h1>
+            <p>
+            Big Game Alaska was founded in 1993 by Mike Miller with a few plains, bison, and Rocky Mountain elk. In the last 30
+            years, Alaska Wildlife Conservation Center has transformed into a 501(c) 3 nonprofit status in 2000. In 2007 the name
+            Big Game Alaska was changed from the one known today as AWCC. Located at Mile 79 of the Seward Highway, this 200-acre
+            sanctuary is the number one visitor attraction in Southcentral Alaska and is home to various animals. This sanctuary
+            includes lynx, bears, porcupines, wood bison, foxes, wolves, moose, elk, and more! In a joint effort since 2003, the
+            AWCC and the Alaska Department of Fish and Game have been participating in a program to reintroduce native wood bison
+            back into Alaska after 100 years of absence.
+            </p>
+    </div>
+
+        <hr class="rounded">
+
+    <!-- EDUCATION -->
+    <div>
+        <h1 id="education-section">Education</h1>
+            <p>
+            Educating is an essential part of the Alaska Wildlife Conservation Center’s mission. They are constantly working to
+            provide opportunities for school groups and guests
+            throughout the year. They help hundreds of visitors daily through field trips, presentations, lessons, internships
+            tours, programs, art contests, and virtually. They recently received a $250,000 grant from Matson to help with an Ocean
+            Education Center. With this, in the Fall of 2023, they plan to build the Maston Education Center where AWCC meets the
+            waters of Turnagain Arm. Here Cook Inlet beluga whales can be seen as well as icebergs, bore tides, and glaciers
+            allowing AWCC to explain their education programs further.
+            </p>
+    </div>
+
+    <hr class="rounded">
+
+    <!-- GOALS -->
+    <div>
+        <h1 id="goals-section">Goals</h1>
         <p>
         Today Alaska Wildlife Conservation Center has ever-increasing demands for animal care, both in resources and medical,
         and is looking to expand and improve its facilities. With this expansion comes opportunities; however, options require
@@ -41,5 +107,14 @@
         restrooms, a break room, and overnight accommodations. Girdwood is the closest location with this solution, but AWCC
         needs to offer onsite accommodation for their employees because of the unaffordable rates.
         </p>
-</body>
+    </div>
+
+    <hr class="rounded">
+
+
+    <div id="footer-section">
+        <a href="#"> Back to Top</a>
+    </div>
+
+    </body>
 </html>
