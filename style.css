@@ -1,0 +1,23 @@
+html {
+    background-color : #212121;
+}
+
+a:link {
+    color: #FF9200;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: orangered;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h1 {
+    color : #FF9200;
+}
+
+p {
+    color : #FF9200;
+}
