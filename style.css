@@ -1,53 +1,32 @@
+
 html {
-    background-color : #212121;
-    padding : 25px;
+    background-color: #393A3C;
+    color: #C5C5C5;
+    padding: 15px;
 }
 
-div {
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    padding-left: 30px;
+}
+
+.grid-item {
+    background-color: #FD6A00;
+    border: 2px solid #222222;
+    padding: 30px;
+    font-size: 20px;
     text-align: center;
-
-}
-
-#navBar {
-    font-size : 48px;
-    padding : 5px
-}
-
-a[href='#history-section'] {
-    padding-right: 50px;
-}
-a[href='#education-section'] {
-    padding-right: 50px;
-}
-a[href='#goals-section'] {
-    padding-right: 50px;
 }
 
 a:link {
-    color: #FF9200;
+    color: #757374;
     cursor: pointer;
     text-decoration: underline;
 }
 
 a:visited {
-    color: orangered;
+    color: #676767;
     cursor: pointer;
     text-decoration: underline;
-}
-
-h1 {
-    color : #FF9200;
-}
-
-p {
-    color : #FF9200;
-}
-
-hr.rounded {
-    border-top: 8px solid white;
-    border-radius: 5px;
-}
-
-#footer-section {
-    font-size: 48px;
 }

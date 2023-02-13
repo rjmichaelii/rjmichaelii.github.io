@@ -1,0 +1,53 @@
+html {
+    background-color : #222222;
+    padding : 25px;
+}
+
+div {
+    text-align: center;
+
+}
+
+#navBar {
+    font-size : 48px;
+    padding : 5px
+}
+
+a[href='#history-section'] {
+    padding-right: 50px;
+}
+a[href='#education-section'] {
+    padding-right: 50px;
+}
+a[href='#goals-section'] {
+    padding-right: 50px;
+}
+
+a:link {
+    color: #ff6600;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: orangered;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h1 {
+    color : #FF6600;
+}
+
+p {
+    color : #FF6600;
+}
+
+hr.rounded {
+    border-top: 8px solid dimgray;
+    border-radius: 5px;
+}
+
+#footer-section {
+    font-size: 48px;
+}
