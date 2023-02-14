@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Unit 1 Graphic - AWCC</title>
-    <link rel="icon" href="AWCC Icon.png?">
-
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Unit 1 Graphic - AWCC</title>
+        <link rel="icon" href="Images/awcc-icon.png">
+        
+    </head>
 <body>
-
-    <!-- NAV BAR -->
-    <div id="navBar">
-        <a href="#history-section">History</a>
-        <a href="#education-section">Education</a>
-        <a href="#goals-section">Goals</a>
+    <!-- CHARITY -->
+    <div>
+        <h1 class="charity">Alaska Wildlife Conservation Center</h1>
     </div>
-
-    <hr class="rounded">
 
     <!-- RANDOM -->
     <div id="random">
@@ -26,7 +21,7 @@
             <p id="demo"></p>
             <script>
                 // Set the date we're counting down to
-                var countDownDate = new Date("Feb 13, 2023 16:59:00").getTime();
+                var countDownDate = new Date("Feb 13, 2023 17:59:00").getTime();
 
                 // Update the count down every 1 second
                 var x = setInterval(function () {
@@ -44,8 +39,8 @@
                     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
                     // Output the result in an element with id="demo"
-                    document.getElementById("demo").innerHTML = "This is the start of my Unit 1 Graphic and the assignment is due in, " + days + "d " + hours + "h "
-                        + minutes + "m " + seconds + "s ";
+                    document.getElementById("demo").innerHTML = "This is the start of my Unit 1 Graphic and the peer review assignment is due in, " + days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s.";
 
                     // If the count down is over, write some text 
                     if (distance < 0) {
@@ -56,60 +51,45 @@
             </script>
     </div>
 
-    <hr class="rounded">
+<div class="grid-container">
 
-    <!-- CHARITY -->
-    <div id="charity">
-        <h1>Alaska Wildlife Conservation Center</h1>
+        <!-- HISTORY -->
+        <div class="grid-item">
+            <h1 id="history-section">Wood Bison Restoration</h1>
+            <img src="https://alaskawildlife.org/wp-content/uploads/2022/01/Wood-bison-release.jpeg">
+            <body>
+                On the left wood bison are pictured as they are being transported to their new home in Shageluk Alaska. The process
+                started by loading 100 wood bison unto special container, transported to Anchorage, Alaska and loaded on a C130
+                plane and flown to the Innoko valley. Here they are now roaming freely for the first time in 100 years. (This image
+                was taken from directly from the AWCC website).
+            </body>
+        </div>
+
+        
+
+        <!-- EDUCATION -->
+        <div class="grid-item">
+            <h1 id="education-section">Education</h1>
+            <img src="https://alaskawildlife.org/wp-content/uploads/2022/10/puppet-show.jpeg" style="float: right;">
+            <body>
+                Here is a image captured during one the the Alaska Animals Puppet Shows that are presented to Kindergardners to 2nd 
+                graders. In this show students learn about animals in Alaska and is followed by hands-on activites.
+            </body>
+        </div>
+
+        <!-- GOALS -->
+        <div class="grid-item">
+            <h1 id="goals-section">Goals</h1>
+            <img src="https://alaskawildlife.org/wp-content/uploads/2022/12/Matson-Page-2.jpg">
+            <img src="https://alaskawildlife.org/wp-content/uploads/2022/12/ACH-Building-Artist-Exterior-12-2-22.jpg" style="float: right;">
+            <body>
+                These pictures show AWCC's plans to the buildings they are looking to create in their expansion. On the left, you can see the Matson
+                Education Center that will be located in Portage, Alaska. On the right, you can see what the outside of the animal clinic and 
+                housing building would look like.
+            </body>
+        </div>
     </div>
-
-    <hr class="rounded">
-
-    <!-- HISTORY -->
-    <div>
-        <h1 id="history-section">History</h1>
-            <p>
-            Big Game Alaska was founded in 1993 by Mike Miller with a few plains, bison, and Rocky Mountain elk. In the last 30
-            years, Alaska Wildlife Conservation Center has transformed into a 501(c) 3 nonprofit status in 2000. In 2007 the name
-            Big Game Alaska was changed from the one known today as AWCC. Located at Mile 79 of the Seward Highway, this 200-acre
-            sanctuary is the number one visitor attraction in Southcentral Alaska and is home to various animals. This sanctuary
-            includes lynx, bears, porcupines, wood bison, foxes, wolves, moose, elk, and more! In a joint effort since 2003, the
-            AWCC and the Alaska Department of Fish and Game have been participating in a program to reintroduce native wood bison
-            back into Alaska after 100 years of absence.
-            </p>
-    </div>
-
-        <hr class="rounded">
-
-    <!-- EDUCATION -->
-    <div>
-        <h1 id="education-section">Education</h1>
-            <p>
-            Educating is an essential part of the Alaska Wildlife Conservation Center’s mission. They are constantly working to
-            provide opportunities for school groups and guests
-            throughout the year. They help hundreds of visitors daily through field trips, presentations, lessons, internships
-            tours, programs, art contests, and virtually. They recently received a $250,000 grant from Matson to help with an Ocean
-            Education Center. With this, in the Fall of 2023, they plan to build the Maston Education Center where AWCC meets the
-            waters of Turnagain Arm. Here Cook Inlet beluga whales can be seen as well as icebergs, bore tides, and glaciers
-            allowing AWCC to explain their education programs further.
-            </p>
-    </div>
-
-    <hr class="rounded">
-
-    <!-- GOALS -->
-    <div>
-        <h1 id="goals-section">Goals</h1>
-        <p>
-        Today Alaska Wildlife Conservation Center has ever-increasing demands for animal care, both in resources and medical,
-        and is looking to expand and improve its facilities. With this expansion comes opportunities; however, options require
-        housing. To improve, AWCC wants to create a more efficient kitchen, collocate an animal infirmary, gear, workstations,
-        restrooms, a break room, and overnight accommodations. Girdwood is the closest location with this solution, but AWCC
-        needs to offer onsite accommodation for their employees because of the unaffordable rates.
-        </p>
-    </div>
-
-    <hr class="rounded">
+</div>
 
 
     <div id="footer-section">
