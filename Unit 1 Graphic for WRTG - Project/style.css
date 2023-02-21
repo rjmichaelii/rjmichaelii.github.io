@@ -7,6 +7,10 @@ body {
     padding: 10px;
 }
 
+div {
+    padding: 5px;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -24,4 +28,8 @@ img {
     margin-right: 15px;
     float: left;
     border: 5px solid black;
+}
+
+img:hover {
+    box-shadow: 0 0 5px 1px rgb(52, 204, 255);
 }
