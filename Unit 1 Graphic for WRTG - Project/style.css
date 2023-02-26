@@ -1,4 +1,4 @@
-html {
+/* html {
     scroll-behavior: smooth;
 }
 
@@ -40,8 +40,4 @@ img {
     float: none;
     width: 1000px;
     height: 650px;
-}
-
-img:hover {
-    box-shadow: 0 0 5px 1px rgb(52, 204, 255);
-}
+} */

@@ -1,4 +1,4 @@
-
+/* Darkmode */
 html {
     background-color: #393A3C;
     color: white;
@@ -14,19 +14,22 @@ html {
 .grid-item {
     background-color: #FD6A00;
     border: 2px solid black;
-    padding: 30px;
+    border-radius: 25px;
+    padding:10px;
     font-size: 20px;
     text-align: center;
 }
 
+/* About me */
 .aboutMe-grid-item {
     padding: 10px;
     font-size: 20px;
     text-align: center;
 }
 
+/* Links */
 a:link {
-    color: #757374;
+    color: whitesmoke;
     cursor: pointer;
     text-decoration: underline;
 }

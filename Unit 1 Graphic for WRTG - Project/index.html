@@ -1,88 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Unit 1 Graphic - AWCC</title>
-        <link rel="icon" href="Images/awcc-icon.png">
-        
-    </head>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Unit 1 Graphic - AWCC</title>
+    <link rel="icon" href="Images/awcc-icon.png">
+    <script src="app.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+            padding: 25px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 10px;
+        }
+
+        .grid-item {
+            padding: 5px;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            width: 500px;
+            height: 300px;
+            border: 5px solid black
+        }
+
+        .mapAWCC {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+            height: 650px;
+        }
+
+        .ref {
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+        .mySlides1, .mySlides2 {
+            display: none;
+            width: 500px;
+            height: 300px;
+        }
+
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+
+        .prev {
+            left: 0px;
+        }
+
+        /* On hover, add a grey background color */
+        .prev:hover, .next:hover {
+            background-color: lightgray;
+            color: black;
+        }
+    </style>
+    <script>
+        let slideIndex = [1, 1];
+        let slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+
+        function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+            let i;
+            let x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) { slideIndex[no] = 1 }
+            if (n < 1) { slideIndex[no] = x.length }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex[no] - 1].style.display = "block";
+        }
+    </script>
+</head>
+
 <body>
-    
+
+    <!-- TITLE -->
+    <h1>Alaska Wildlife Conservation Center</h1>
+
+    <img class="mapAWCC" src="https://alaskawildlife.org/wp-content/uploads/2022/01/AWCC-2020-Map-2048x1522-1.jpeg">
+
+    <!-- HISTORY -->
+    <h1>Wood Bison Restoration</h1>
+
     <div class="grid-container">
-
-        <!-- CHARITY -->
         <div class="grid-item">
-            <h1 class="charity">Alaska Wildlife Conservation Center</h1>
-            <a target="_blank" href="https://alaskawildlife.org/wp-content/uploads/2022/01/AWCC-2020-Map-2048x1522-1.jpeg">
-                <img class="mapAWCC" src="https://alaskawildlife.org/wp-content/uploads/2022/01/AWCC-2020-Map-2048x1522-1.jpeg">
-            </a>
+            <img src="https://alaskawildlife.org/wp-content/uploads/2022/01/Wood-bison-release.jpeg">
         </div>
 
-        <!-- HISTORY -->
         <div class="grid-item">
-            <h1 id="history-section">Wood Bison Restoration</h1>
-            <a target="_blank" href="https://alaskawildlife.org/wp-content/uploads/2022/01/Wood-bison-release.jpeg">
-                <img src="https://alaskawildlife.org/wp-content/uploads/2022/01/Wood-bison-release.jpeg">
-            </a>
-            <body>
-                On the left wood bison are pictured as they are being transported to their new home in Shageluk Alaska. The process
-                started by loading 100 wood bison into special container, then transported to Anchorage, Alaska and finaly loaded on
-                a C130 plane and flown to the Innoko valley. Here they are now roaming freely for the first time in 100 years.
-            </body>
-        </div>
-
-        <!-- EDUCATION -->
-        <div class="grid-item">
-            <h1 id="education-section">Education</h1>
-            <a target="_blank" href="https://alaskawildlife.org/wp-content/uploads/2022/10/puppet-show.jpeg">
-                <img src="https://alaskawildlife.org/wp-content/uploads/2022/10/puppet-show.jpeg" style="float: right;">
-            </a>
-            <body>
-                Here is a image captured during one the the Alaska Animals Puppet Shows that are presented to Kindergardners to 2nd
-                graders. In this show students learn about animals in Alaska and are followed by hands-on activities.
-            </body>
-        </div>
-
-        <!-- GOALS -->
-        <div class="grid-item">
-            <h1 id="goals-section">Goals</h1>
-            <a target="_blank" href="https://alaskawildlife.org/wp-content/uploads/2022/12/Matson-Page-2.jpg">
-                <img src="https://alaskawildlife.org/wp-content/uploads/2022/12/Matson-Page-2.jpg">
-            </a>
-            <body>
-                Here you can see the Matson Education Center that will be located in Portage, Alaska.
-            </body>
-        </div>
-
-        <br>
-
-        <!-- GOALS v.2-->
-        <div class="grid-item">
-            <a target="_blank" href="https://alaskawildlife.org/wp-content/uploads/2022/12/ACH-Building-Artist-Exterior-12-2-22.jpg">
-                <img src="https://alaskawildlife.org/wp-content/uploads/2022/12/ACH-Building-Artist-Exterior-12-2-22.jpg" style="float: right;">
-            </a>
-            <body>
-                On the right, you can see what the outside of the animal clinic and housing building would look like.
-            </body>
-        </div>
-
-        <!-- REFERENCES -->
-        <div class="grid-item">
-            <h1 id="references-sections">References</h1>
-            <body>
-                All pictures were taken from <a target="_blank" href="https://alaskawildlife.org/">https://alaskawildlife.org/</a>
-            </body>
-        </div>
+            On the left wood bison are pictured as they are being transported to their new home in Shageluk Alaska.
+            The process started by loading 100 wood bison into special container, then transported to Anchorage,
+            Alaska and finally loaded on a C130 plane and flown to the Innoko valley. Here they are now roaming
+            freely for the first time in 100 years.
         </div>
     </div>
-</div>
+
+    <!-- EDUCATION -->
+    <h1>Education</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            Here is a image captured during one the the Alaska Animals Puppet Shows that are presented to
+            Kindergardners to 2nd graders. In this show students learn about animals in Alaska and are followed
+            by hands-on activities.
+        </div>
+        <div class="grid-item">
+            <img src="https://alaskawildlife.org/wp-content/uploads/2022/10/puppet-show.jpeg">
+        </div>
+    </div>
 
 
+    <!-- GOALS -->
+    <h1>Goals</h1>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="slideshow-container">
+                <div class="mySlides1">
+                    <img src="https://alaskawildlife.org/wp-content/uploads/2022/12/Matson-Page-1.jpg">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="https://alaskawildlife.org/wp-content/uploads/2022/12/Matson-Page-2.jpg">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="https://alaskawildlife.org/wp-content/uploads/2022/12/Matson-Page-3.jpg">
+                </div>
+
+                <div class="mySlides1">
+                    <img src="https://alaskawildlife.org/wp-content/uploads/2022/12/Matson-Page-4.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 0)" style="right: 11px;">&#10095;</a>
+            </div>
+        </div>
+        
+        <div class="grid-item">
+            Here you can see plans of the Matson Education Center that is set to be located in Portage, Alaska.
+        </div>
+    </div>
+
+
+    <div class="grid-container">
+        <div class="grid-item">
+            Here are more plans of what the animal clinic/housing building will look like.
+        </div>
+
+        <div class="grid-item">
+            <div class="slideshow-container">
+                <div class="mySlides2">
+                    <img src="https://alaskawildlife.org/wp-content/uploads/2022/12/ACH-Building-Artist-Exterior-12-2-22.jpg">
+                </div>
+
+                <div class="mySlides2">
+                    <img src="https://alaskawildlife.org/wp-content/uploads/2022/12/ACH-Artist-Floor-Plan-Updated-12-2-22.jpg">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1, 1)" style="right: 76px;">&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- REFERENCES -->
+    <h1>References</h1>
+
+    <div class="ref">
+        All pictures were taken from <a target="_blank"
+            href="https://alaskawildlife.org/">https://alaskawildlife.org/</a>
+    </div>
 
     <div id="footer-section">
-        <a href="#"> Back to Top</a>
+        <a href="#">Back to Top</a>
     </div>
 
-    </body>
+    </div>
+
+</body>
+
 </html>
