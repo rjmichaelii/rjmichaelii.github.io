@@ -6,112 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Unit 1 Graphic - AWCC</title>
     <link rel="icon" href="Images/awcc-icon.png">
-    <script src="app.js"></script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-            padding: 25px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto;
-            padding: 10px;
-        }
-
-        .grid-item {
-            padding: 5px;
-            text-align: center;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        img {
-            width: 500px;
-            height: 300px;
-            border: 5px solid black
-        }
-
-        .mapAWCC {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 1000px;
-            height: 650px;
-        }
-
-        .ref {
-            text-align: center;
-        }
-
-        * {
-            box-sizing: border-box
-        }
-        .mySlides1, .mySlides2 {
-            display: none;
-            width: 500px;
-            height: 300px;
-        }
-
-
-        /* Slideshow container */
-        .slideshow-container {
-            max-width: 1000px;
-            position: relative;
-            margin: auto;
-        }
-
-        /* Next & previous buttons */
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: black;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-        }
-
-        /* Position the "next button" to the right */
-
-        .prev {
-            left: 0px;
-        }
-
-        /* On hover, add a grey background color */
-        .prev:hover, .next:hover {
-            background-color: lightgray;
-            color: black;
-        }
-    </style>
-    <script>
-        let slideIndex = [1, 1];
-        let slideId = ["mySlides1", "mySlides2"]
-        showSlides(1, 0);
-        showSlides(1, 1);
-
-        function plusSlides(n, no) {
-            showSlides(slideIndex[no] += n, no);
-        }
-
-        function showSlides(n, no) {
-            let i;
-            let x = document.getElementsByClassName(slideId[no]);
-            if (n > x.length) { slideIndex[no] = 1 }
-            if (n < 1) { slideIndex[no] = x.length }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            x[slideIndex[no] - 1].style.display = "block";
-        }
-    </script>
 </head>
 
 <body>
@@ -180,14 +74,24 @@
         </div>
         
         <div class="grid-item">
-            Here you can see plans of the Matson Education Center that is set to be located in Portage, Alaska.
+            These images are plans to show what the new Matson Ocean Education Center will look like. It will include a square classroom
+            and a large deck. The class room is large enough to hold 30-50 people and comes with restroom facilites, storage 
+            from shipping containers, solar panels, and a rain collectino system. Here instructors will focus on educational 
+            programs involving the Cook Inlet beluga whales, icebergs, and tides. Other items incldue signs, a life-size 
+            beluga skeleton, binoculars, Secchi disks (for measuring water turbidity), and a hydrophone for listening to 
+            underwater sounds.
         </div>
     </div>
 
 
     <div class="grid-container">
         <div class="grid-item">
-            Here are more plans of what the animal clinic/housing building will look like.
+            These three images are plans to show the new Animal Clinic and Housing Building will look like. On the first floor they plan to
+            create a more efficient kitchen for diet preparation. Next a improved animal infoirmary with a garage door for larger animals, 
+            hydraulic table/lift systems for surgeries, another wing for biosecurity, and a workstation for the head veterinarian. Last for 
+            the first floor, storage for gear and supplies, keeper workstations, restrooms, and a breakroom. For the second floor this is 
+            where they will have additional housing to accommodate 16 people with multiple restrooms, showers, laundry facilities, a big 
+            kitchen, multiple sinks, and internet connection.
         </div>
 
         <div class="grid-item">
@@ -201,7 +105,7 @@
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1, 1)" style="right: 76px;">&#10095;</a>
+                <a class="next" onclick="plusSlides(1, 1)" style="right: 10.5px;">&#10095;</a>
             </div>
         </div>
     </div>
@@ -221,5 +125,7 @@
     </div>
 
 </body>
+
+<script src="app.js"></script>
 
 </html>
