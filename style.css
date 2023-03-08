@@ -34,10 +34,47 @@ a:link {
     text-decoration: underline;
 }
 
-a:visited {
-    color: #676767;
+a.linkTo:visited {
+    color: gray;
     cursor: pointer;
     text-decoration: underline;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    background-color: #FD6A00;
+    border: 2px solid black;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: orangered;
+}
+
+.navbar a:visited {
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
 }
 
 /* TIMELINE */
@@ -82,7 +119,7 @@ body {
     position: absolute;
     width: 25px;
     height: 25px;
-    right: -12px;
+    right: -12.5px;
     background-color: #FD6A00;
     top: 15px;
     border-radius: 50%;
@@ -129,7 +166,7 @@ body {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -13px;
+    left: -12.5px;
 }
 
 /* The actual content */
