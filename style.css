@@ -20,13 +20,6 @@ html {
     text-align: center;
 }
 
-/* ABOUT ME */
-.aboutMe-grid-item {
-    padding: 10px;
-    font-size: 20px;
-    text-align: center;
-}
-
 /* LINKS */
 a:link {
     color: whitesmoke;
