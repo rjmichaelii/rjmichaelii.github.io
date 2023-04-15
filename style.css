@@ -20,6 +20,26 @@ html {
     text-align: center;
 }
 
+.grid-item-projects {
+    background-color: #FD6A00;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.grid-item-contactme {
+    background-color: #FD6A00;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 200px;
+}
+
 /* LINKS */
 a:link {
     color: whitesmoke;
