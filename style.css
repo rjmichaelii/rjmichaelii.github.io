@@ -15,7 +15,7 @@ html {
     background-color: #FD6A00;
     border: 2px solid black;
     border-radius: 25px;
-    padding:10px;
+    padding: 10px;
     font-size: 20px;
     text-align: center;
 }
@@ -53,15 +53,19 @@ a.linkTo:visited {
     text-decoration: underline;
 }
 
-/* NAVBAR */
+#AboutMe {
+    padding-top: 25px;
+}
 
+/* NAVBAR */
 .navbar {
     width: 100%;
     background-color: #FD6A00;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     overflow: auto;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 10;
 }
 
