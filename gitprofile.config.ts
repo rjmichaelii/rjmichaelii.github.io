@@ -57,7 +57,7 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'Robert Michael',
+    linkedin: 'robert-michael-a444921b5',
     /* twitter: 'arif_szn',
     mastodon: 'arifszn@mastodon.social',
     researchGate: '',
@@ -92,68 +92,84 @@ const CONFIG = {
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'University of Alaska Anchorage',
+      position: 'CSCE Tutor/Lab TA',
+      from: 'August 2023',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://www.uaa.alaska.edu/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'University of Alaska Anchorage',
+      position: 'CSCE Research Student',
+      from: 'September 2024',
+      to: 'Present',
+      companyLink: 'https://www.uaa.alaska.edu/',
     },
-  ],
-  certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      company: 'ACEP',
+      position: 'Cybersecurity Intern',
+      from: 'May 2024',
+      to: 'August 2024',
+      companyLink: 'https://www.uaf.edu/acep/',
     },
+    {
+      company: '',
+      position: '',
+      from: '',
+      to: '',
+      companyLink: '',
+    },
+
   ],
+  // certifications: [
+  //   {
+  //     name: 'Lorem ipsum',
+  //     body: 'Lorem ipsum dolor sit amet',
+  //     year: 'March 2022',
+  //     link: 'https://example.com',
+  //   },
+  // ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'University Alaska Anchorage',
+      degree: 'BS in Computer Science',
+      minor: 'Computer Systems Engineering, Mathematics',
+      from: '2020',
+      to: 'Expected 12/2025',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Bethel Regional High School',
+      degree: 'High School Diploma',
+      from: '2013',
+      to: '2017',
     },
   ],
   publications: [
     {
-      title: 'Publication Title',
+      title: 'ACEP\'s data team conducts cybersecurity assessments in Kotzebue',
       conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      journalName: 'ACEP',
+      authors: '',
+      link: 'https://www.uaf.edu/acep/news/2024/aceps-data-team-conducts-cybersecurity-assessments-in-kotzebue.php',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        '',
     },
     {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
+      title: 'A journey in cybersecurity awareness and education',
+      conferenceName: '',
+      journalName: 'ACEP',
+      authors: '',
+      link: 'https://www.uaf.edu/acep/news/2024/a-journey-in-cybersecurity-awareness-and-education.php',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        '',
     },
   ],
   // Display articles from your medium or dev account. (Optional)
-  blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
-  },
+  // blog: {
+  //   source: 'dev', // medium | dev
+  //   username: 'arifszn', // to hide blog section, keep it empty
+  //   limit: 2, // How many articles to display. Max is 10.
+  // },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
@@ -226,11 +242,11 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  // footer: `Made with <a 
+  //     class="text-primary" href="https://github.com/arifszn/gitprofile"
+  //     target="_blank"
+  //     rel="noreferrer"
+  //   >GitProfile</a> and ❤️`,
 
   enablePWA: true,
 };
